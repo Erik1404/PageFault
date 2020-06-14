@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Get value of selected radio button
+    </title>
+</head>
+
+<body>
+    <p>
+        Select a radio button and click on Submit.
+    </p>
+
+    Gender:
+    <input type="radio" name="PageFault" value="Clock">
+    <input type="radio" name="PageFault" value="Fifo">
+    <input type="radio" name="PageFault" value="LRU">
+    <input type="radio" name="PageFault" value="Optimal">
+
+    <br>
+
+    <button type="button" onclick="displayRadioValue()"> 
+        Submit 
+    </button>
+
+    <br>
+
+    <div id="result"></div>
+
+    <script>
+        function displayRadioValue() {
+            var ele = document.getElementsByName('PageFault');
+            switch (PageFault) {
+                case 'Clock':
+                    document.getElementsByClassName(Clock.js);
+                    break;
+
+                case 'LRU':
+                    document.getElementsByClassName(LRU.js);
+                    break;
+
+                case 'Fifo':
+                    document.getElementsByClassName(fifo.js);
+                    break;
+
+                case 'Optimal':
+                    document.getElementsByClassName(optimal.js);
+                    break;
+
+                default:
+                    document.write("Unknown Pagefault<br />")
+            }
+            document.write("Exiting switch block");
+        }
+    </script>
+</body>
+
+</html>
